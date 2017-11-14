@@ -1,0 +1,25 @@
+
+PYTHONPATH=~/PycharmProjects/ScrapyAndDjango/myweb DJANGO_SETTINGS_MODULE=myweb.settings scrapy shell
+
+
+
+In [25]: Pe
+PendingDeprecationWarning  PersonItem
+
+In [25]: PersonItem.
+PersonItem.clear         PersonItem.errors        PersonItem.instance      PersonItem.iteritems     PersonItem.keys          PersonItem.popitem       PersonItem.setdefault
+PersonItem.copy          PersonItem.fields        PersonItem.is_valid      PersonItem.iterkeys      PersonItem.mro           PersonItem.register      PersonItem.update
+PersonItem.django_model  PersonItem.get           PersonItem.items         PersonItem.itervalues    PersonItem.pop           PersonItem.save          PersonItem.values
+
+In [25]: PersonItem.django_model.objects.cre
+PersonItem.django_model.objects.create            PersonItem.django_model.objects.creation_counter
+
+In [25]: PersonItem.django_model.objects.create
+PersonItem.django_model.objects.create
+
+In [25]: i = PersonItem.django_model.objects.create(age='39', name='Pedro')
+2017-11-14 16:43:17 [django.db.backends] DEBUG: (0.000) QUERY = u'BEGIN' - PARAMS = (); args=None
+2017-11-14 16:43:17 [django.db.backends] DEBUG: (0.000) QUERY = u'INSERT INTO "myapp_person" ("name", "age") VALUES (%s, %s)' - PARAMS = (u'Pedro', 39); args=['Pedro', 39]
+
+In [26]: i.save
+Out[26]: <bound method Person.save of <Person: Person object>>
