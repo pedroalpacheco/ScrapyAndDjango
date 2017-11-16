@@ -1,5 +1,6 @@
 from django.db import models
 
 class Person(models.Model):
-    name = models.CharField(max_length=255)
-    age = models.IntegerField()
+    data = models.TextField(blank=True, null=True)
+    compra = models.TextField(blank=True, null=True)
+

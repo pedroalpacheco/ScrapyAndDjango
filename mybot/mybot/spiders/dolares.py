@@ -17,5 +17,6 @@ class DolarSpider(scrapy.Spider):
         self.log(dados)
         p = PersonItem()
         p['data'] = data
+        p['compra'] = compra
         p.save()
         #return PersonItem(p['data'] = data)
