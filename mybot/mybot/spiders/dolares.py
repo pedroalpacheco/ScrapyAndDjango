@@ -18,5 +18,6 @@ class DolarSpider(scrapy.Spider):
         p = PersonItem()
         p['data'] = data
         p['compra'] = compra
+        p['venda'] = venda
         p.save()
         #return PersonItem(p['data'] = data)
